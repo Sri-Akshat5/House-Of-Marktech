@@ -3,7 +3,8 @@ import Users from "../components/Users";
 import Services from "../components/Services";
 import Pricing from "../components/Pricing";
 import Contact from "../components/Contact";
-import SearchBar from "../components/SearchBar";
+import Nav from  "../components/Nav";
+import Footer from  "../components/Footer";
 import { useEffect, useState } from "react";
 
 import ServiceCard from "../components/ServiceCard";
@@ -21,13 +22,22 @@ const Home = () => {
 
   return (
     <div className="w-full min-h-screen">
-      <Hero />
-     <ServiceCard/>
-      <Services />
-      <Pricing />
-      <Contact />
-      <Users/>
-    </div>
+        <Nav />
+        <section id="hero">
+          <Hero />
+        </section>
+        <section id="services">
+          <Services />
+        </section>
+        <section id="pricing">
+          <Pricing />
+        </section>
+        <section id="contact">
+          <Contact />
+        </section>
+        <Users />
+        <Footer />
+      </div>
   );
 };
 
