@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
         {/* Brand */}
         <a href="/" className="text-2xl font-bold text-blue-400">
-          MarkTech 🚀
+          House of MarkTechs 🚀
         </a>
 
         {/* Social Media */}

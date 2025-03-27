@@ -7,9 +7,9 @@ const Users = () => {
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/users")
       .then((response) => response.json())
-      .then((data) => setUsers(data))
+      .then((data) => setUsers(data.slice(0, 6))) 
       .catch((error) => console.error("Error fetching users:", error));
-  }, []);
+  }, []);  
 
   return (
     <div className="p-8 bg-gradient-to-br from-blue-100 to-blue-300 min-h-screen">

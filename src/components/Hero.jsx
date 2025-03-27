@@ -27,7 +27,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.6 }}
         >
-          Welcome to <span className="text-blue-400">House Of Marktech</span>
+          Welcome to <span className="text-blue-400">House Of Marktechs</span>
         </motion.h1>
         <motion.p
           className="text-lg sm:text-xl mt-4 text-gray-200"
